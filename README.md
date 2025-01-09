@@ -38,8 +38,17 @@ to push the entire get-ssh folder to the /tmp directory of the ODU.
 ### **3. Run the run.sh Script in adb shell.**
 
 ```bash
-adb shell /tmp/get-ssh/run.sh
+adb shell
 ```
+In adb shell
+```bash
+cd /tmp/get-ssh/
+```
+```bash
+./run.sh
+```
+> Directly using **adb shell /tmp/get-ssh/run.sh** won't work
+
 You can now use 
 ```bash
 ssh root@<ODU's GATEWAY ADDR> 
